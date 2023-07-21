@@ -1,0 +1,58 @@
+.form-inputs {
+  position: relative;
+}
+
+.contact-top {
+  color: white;
+  background: var(--secundary-color);
+}
+
+.form-inputs .form-control {
+  height: 45px;
+}
+
+.form-inputs .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #000;
+}
+
+.form-inputs i {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.icons {
+  margin-left: auto;
+  color: #ffffff;
+  font-size: 2rem;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons .fa-cart-shopping {
+  margin-right: .8rem;
+}
+
+.qty {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.header-icons {
+  margin: 0 auto;
+}
+
+.header-main {
+  background: var(--primary-color) !important;
+}
+
+.navbar {
+  background: var(--secundary-color) !important;
+}
+
+.icon-desc {
+  color: #ffffff;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tomdosom/css/style.css">
+  <link rel="stylesheet" href="css/cad-categorias.css">
+  <script>
+    function verificar() {
+      if(confirm("Deseja excluir esta categoria?")) {
+        return true
+      } else {
+        return false;
+      }
+    }
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="base" class="arqfundo">
+  
+    <div id="formcadastro">
+      <h1 class="tituloh1">GERENCIAMENTO DE CATEGORIAS</h1>
+
+      <form name="form1" method="post" action="cad-categorias.php">
+        <input type="hidden" name="idcat" value="{$idcat}">
+        <table id="tabelaCat">
+          <tr>
+            <td><span class="titulodois">CATEGORIA:</span></td>
+            <td><input type="text" name="categoria" class="entradaCat" required value="{$categoria}"></td>
+          </tr>
+          <tr>
+            <td><span class="titulodois">NOME DO LINK:</span></td>
+            <td><input type="text" name="linktcateg" class="entradaCat" required value="{$linkcateg}"></td>
+          </tr>
+        </table>
+        <p id="areabt">
+          <input type="submit" name="acao" class="botaoCat" value="{$textoBotao}">
+          <input type="submit" name="acao" class="botaoCat" value="Novo">
+        </p>
+      </form>
+      
+      <div id="arealista">
+        <table class="tabela_editar">
+          <tr style="background: #333;">
+            <td width="350px"><span class="tituloListaCat">CATEGORIAS</span></td>
+            <td><span class="tituloListaCat">EDITAR</span></td>
+            <td><span class="tituloListaCat">EXCLUIR</span></td>
+          </tr>
+          <!-- BLOCO CATEGORIAS -->
+          {foreach $minhasCategorias as $c}
+          <tr>
+            <td>
+              <span class="tituloResp">{$c.categoria}</span>
+            </td>
+            <td>
+              <a href="cad-categorias.php?idcat={$c.idcat}&acao=editar"><img src="admin/inc/edit.png" alt=""></a>
+            </td>
+            <td>
+              <a href="cad-categorias.php?idcat={$c.idcat}&acao=excluir" onclick="return verificar()"><img
+                  src="admin/inc/delete.png" alt=""></a>
+            </td>
+          </tr>
+      
+          <!-- FIM DO BLOCO CATEGORIAS -->
+        </table>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+

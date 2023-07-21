@@ -1,0 +1,105 @@
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 30px;
+}
+
+#formcadastro {
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px;
+}
+
+/* Estilos para a tabela de categorias */
+#tabelaCat {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-collapse: collapse;
+}
+
+#tabelaCat td {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.titulodois {
+  font-weight: bold;
+}
+
+.entradaselect {
+  width: 100%;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.produtoDesc {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.precoProd {
+  width: 100%;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.botaoCat {
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 1em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.botaoCat:hover {
+  background-color: #555;
+}
+
+/* Estilos para a lista de produtos */
+#arealista {
+  margin-top: 30px;
+}
+
+.tituloListaCat {
+  color: #fff;
+  font-weight: bold;
+}
+
+#arealista table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#arealista td {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#arealista td:first-child {
+  font-weight: bold;
+  background-color: #333;
+}
+
+.tituloResp {
+  font-weight: bold;
+}
