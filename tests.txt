@@ -90,3 +90,60 @@
                 wishlist</button></div>
           </div>
         </div>
+
+         --primary-color: #34394f;
+  --secundary-color: #575b74;
+  --tertiary-color: #6d7081;
+
+
+
+    <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="bg-white border rounded p-2 text-center">
+            <div class="d-flex justify-content-center">
+              <img class="img-fluid img-responsive rounded product-image"
+                src="/assets/imgs/lenovo-laptop-ideapad-3i-15in-hero.webp" alt="Notebook Image">
+            </div>
+            <h6 class="mt-2 font-weight-bold">Notebook IdeaPad 3i (15” Intel)</h6>
+            <div class="d-flex align-items-center">
+              <div class="ratings mr-2">
+                <?php echo exibirEstrelas(4.8); ?> <span>4.8</span>
+              </div>
+              <span class="ml-2">Avaliações</span>
+            </div>
+            <div class="mt-1 mb-1 spec-1">
+              <!-- Especificações -->
+            </div>
+            <div>
+              <?php
+              $precoNormal = 2670.99;
+              $precoPromocional = 2350.99;
+              echo exibirEconomia($precoNormal, $precoPromocional);
+              ?>
+              <div class="d-flex justify-content-center">
+                <h6 class="font-weight-bold">R$
+                  <?php echo $precoPromocional; ?>
+                </h6>
+                <span class="strike-text ml-2">R$
+                  <?php echo $precoNormal; ?>
+                </span>
+              </div>
+            </div>
+            <div class="d-flex flex-column mt-3">
+              <button class="btn btn-primary btn-sm mb-1" type="button">Detalhes</button>
+              <button class="btn btn-outline-primary btn-sm" type="button">
+                Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Repita este bloco para cada card -->
+      </div>
+    </div>
+
+    <!-- Repita este bloco para cada card -->
+  </div>
+  </div>
+

@@ -44,13 +44,13 @@
       <div class="container-fluid">
         <div class="row p-2 pt-3 pb-3 align-items-center">
           <div class="col-md-2">
-            <img class="d-none d-md-flex" src="https://i.imgur.com/R8QhGhk.png" width="100">
+            <img class="d-none d-md-flex logo" src="assets/imgs/logo.png">
           </div>
           <div class="col-md-6">
             <form class="form-inline my-2 my-lg-0 mx-auto">
               <div class="input-group">
                 <input class="form-control" type="search" placeholder="procure por produtos" aria-label="Search">
-                <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
             </form>
           </div>
@@ -86,7 +86,7 @@
 
   <nav class="navbar navbar-expand-md text-white">
     <div class="container-fluid">
-      <a class="navbar-brand d-md-none d-md-flex" href="#">Categories</a>
+      <a class="navbar-brand d-md-none d-md-flex text-white" href="#">Categorias</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -94,28 +94,28 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Mobiles
+              Outros
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Smart Phones</a></li>
-              <li><a class="dropdown-item" href="#">Feature Phones</a></li>
-              <li><a class="dropdown-item" href="#">Mobile Covers</a></li>
+              <li><a class="dropdown-item" href="#">Câmeras</a></li>
+              <li><a class="dropdown-item" href="#">TVs</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Electronics</a>
+            <a class="nav-link active text-white" aria-current="page" href="#">Electronics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Fashion</a>
+            <a class="nav-link text-white" href="#">Fashion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Furnitures</a>
+            <a class="nav-link text-white" href="#">Furnitures</a>
           </li>
         </ul>
       </div>
     </div>
+
   </nav>
   </header>
 

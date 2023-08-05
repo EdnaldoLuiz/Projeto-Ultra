@@ -7,6 +7,10 @@
 }
 
 .copyright {
-
   background: var(--primary-color);
+}
+
+.copyright p,
+.copyright a {
+  font-size: 1.2rem;
 }

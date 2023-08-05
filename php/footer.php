@@ -53,8 +53,9 @@
   </div>
 
   <div class="text-center p-3 copyright">
-    © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <p>LGPD
+      Teki e-coomerce. Todos os direitos reservados | Powered by: EdnLz Group</p>
+    <a> ABC Distribuidora S/A. CNPJ 12.XX.XXX/XXXX-43</a>
   </div>
 
 </footer>
