@@ -16,9 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $nome = $_POST['nome'];
   $preco_original = $_POST['preco_original'];
   $preco_promocional = $_POST['preco_promocional'];
+  $categoria = $_POST['categoria'];
 
-  $sql = "INSERT INTO notebooks (imagem, nome, preco_original, preco_promocional)
-            VALUES (:imagem, :nome, :preco_original, :preco_promocional)";
+  $sql = "INSERT INTO produtos (imagem, nome, preco_original, preco_promocional, categoria)
+            VALUES (:imagem, :nome, :preco_original, :preco_promocional, :categoria)";
 
   $stmt = $PDO->prepare($sql);
 
@@ -28,12 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $stmt->bindParam(':nome', $nome);
   $stmt->bindParam(':preco_original', $preco_original);
   $stmt->bindParam(':preco_promocional', $preco_promocional);
-
+  $stmt->bindParam(':categoria', $categoria);
   if ($stmt->execute()) {
     echo "Produto inserido com sucesso!";
   } else {
     echo "Erro ao inserir o produto.";
   }
 }
-
 ?>

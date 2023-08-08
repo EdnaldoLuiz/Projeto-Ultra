@@ -7,19 +7,19 @@
       </p>
       <div class="d-flex justify-content-center">
         <a href="#!" class="text-white mx-2">
-          <i class="fab fa-facebook icons"></i>
+          <i class="fab fa-facebook social-icons"></i>
         </a>
         <a href="#!" class="text-white mx-2">
-          <i class="fab fa-twitter icons"></i>
+          <i class="fab fa-twitter social-icons"></i>
         </a>
         <a href="#!" class="text-white mx-2">
-          <i class="fab fa-instagram icons"></i>
+          <i class="fab fa-instagram social-icons"></i>
         </a>
         <a href="#!" class="text-white mx-2">
-          <i class="fab fa-linkedin icons"></i>
+          <i class="fab fa-linkedin social-icons"></i>
         </a>
         <a href="#!" class="text-white mx-2">
-          <i class="fab fa-youtube icons"></i>
+          <i class="fab fa-youtube social-icons"></i>
         </a>
       </div>
     </div>

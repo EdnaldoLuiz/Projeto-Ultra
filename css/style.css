@@ -38,6 +38,7 @@ body {
   margin: 1rem auto;
   width: 95%;
 }
+
 .price-section {
   display: flex;
   flex-direction: column;
@@ -46,7 +47,8 @@ body {
 .price-original {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #262e55; /* Cor de preço original */
+  color: #262e55;
+  /* Cor de preço original */
 }
 
 .card {
@@ -73,13 +75,14 @@ body {
   width: fit-content;
   height: 100%;
 }
+
 .strike-text {
   color: red;
   text-decoration: line-through;
   font-size: 0.9rem;
 }
-.card-info {
-}
+
+.card-info {}
 
 .card-info h3 {
   text-align: center;
@@ -88,7 +91,8 @@ body {
 }
 
 .card-title {
-  font-size: 1rem; /* Defina o tamanho de fonte desejado */
+  font-size: 1rem;
+  /* Defina o tamanho de fonte desejado */
   overflow: hidden;
   text-overflow: ellipsis;
 }
