@@ -26,34 +26,75 @@ body {
 
 .cards-title {
   display: flex;
-  justify-content: left;
+  margin: 1rem auto;
+  width: 95%;
 }
 
 .cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 1rem auto;
   width: 95%;
+}
+.price-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-original {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #262e55; /* Cor de preço original */
 }
 
 .card {
   display: grid;
   grid-template-rows: 1fr 1fr;
   width: 280px;
-  height: 400px;
+  height: min-content;
+  padding: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ratings span {
+  color: rgb(184, 176, 176);
+  margin-left: 0.4rem;
 }
 
 .card-img {
   background: rgb(240, 238, 238);
+  text-align: center;
+  margin: 0 auto;
 }
 
 .card-img img {
-  width: 100%;
+  width: fit-content;
   height: 100%;
-  object-fit: cover;
+}
+.strike-text {
+  color: red;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+.card-info {
+}
+
+.card-info h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-title {
+  font-size: 1rem; /* Defina o tamanho de fonte desejado */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ratings {
+  color: rgb(235, 201, 11);
 }
 
 .carousel-control-prev-icon,

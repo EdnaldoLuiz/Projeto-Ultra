@@ -16,12 +16,7 @@ function exibirEstrelas($notaProduto)
   }
   return $estrelasHTML;
 }
-function exibirEconomia($precoNormal, $precoPromocional)
-{
-  $economia = $precoNormal - $precoPromocional;
-  if ($economia > 0) {
-    return '<div class="economia-box">ECONOMIA DE R$ ' . number_format($economia, 2) . '</div>';
-  }
-  return '';
+for ($card = 1; $card <= 4; $card++) {
+  $numeroAvaliacoes = rand(100, 999);
 }
 ?>

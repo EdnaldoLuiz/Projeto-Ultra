@@ -77,10 +77,7 @@
     color: red
   }
 
-  .strike-text {
-    color: red;
-    text-decoration: line-through
-  }
+
 
   .product-image {
     width: 100%

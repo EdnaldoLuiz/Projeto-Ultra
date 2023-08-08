@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/cadastro.produtos.css" />
+  <title>Inserir Produto - Teki</title>
+</head>
+
+<body>
+  <main>
+    <div id="formcadastro">
+      <h1 class="tituloh1">Inserir Novo Produto</h1>
+
+      <form method="post" action="inserir.php" enctype="multipart/form-data">
+
+        <div class="main-container">
+
+          <div class="right">
+
+            <div class="campos">
+              <label for="nome">Nome:</label>
+              <input type="text" name="nome" class="entradaCat" required />
+            </div>
+
+            <div class="campos">
+              <label for="preco_original">Preço Original:</label>
+              <input type="number" name="preco_original" class="entradaCat" required />
+            </div>
+
+            <div class="campos">
+              <label for="preco_promocional">Preço Promocional:</label>
+              <input type="number" name="preco_promocional" class="entradaCat" required />
+            </div>
+
+            <div class="campos">
+              <label for="preco_promocional">Categoria:</label>
+              <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Selecione uma categoria</option>
+                <option value="notebooks">Notebooks</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="outros">Outros</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="left">
+
+            <div class="campos">
+              <label for="imagem" class="titulodois">Imagem:</label>
+              <div class="img-preview">
+                <img id="imagem-preview" src="#" alt="" />
+              </div>
+            </div>
+
+            <div class="campos">
+              <label for="imagem" class="custom-file-upload">Escolha a imagem <i class="fa-solid fa-cloud-arrow-up"></i>
+                <input type="file" id="imagem" name="imagem" accept="image/*" required hidden />
+              </label>
+              <span id="img-name">nenhuma imagem escolhida</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="campos">
+          <input type="submit" value="Inserir Produto" class="cadastrar" />
+        </div>
+    </div>
+    </form>
+  </main>
+  <script src="js/img-input-preview.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+body {
+  background: url(/image.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#formcadastro {
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.tituloh1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+}
+
+.right {
+  width: 50%;
+  flex: 1;
+}
+
+.left {
+  flex: 1;
+  width: 50%;
+}
+
+.campos label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+select {
+  width: fit-content;
+}
+
+.campos input {}
+
+.campos {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.entradaCat {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.img-preview {
+  padding: .4rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: rgb(240, 238, 238);
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.custom-file-upload:hover {
+  background-color: #2980b9;
+}
+
+#img-name {
+  text-align: center;
+}
+
+#imagem-preview {
+  padding: .4rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.cadastrar {
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #3498db;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.cadastrar:hover {
+  background-color: #2980b9;
+}

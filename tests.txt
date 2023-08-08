@@ -1,149 +1,216 @@
-<i class="fa-solid fa-circle"></i>
 
- <div class="row p-2 bg-white border rounded">
-          <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
-              src="https://i.imgur.com/QpjAiHq.jpg"></div>
-          <div class="col-md-6 mt-1">
-            <h5>Quant olap shirts</h5>
-            <div class="d-flex flex-row">
-              <div class="ratings mr-2">
-                <?php echo exibirEstrelas(4.3); ?> <span>4.3</span>
+          </div>
+      [![Deploy on Railway Test](https://railway.app/button.svg)](https://railway.app/new/template/fWEWWf)
+
+
+
+      <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/cadastro.produtos.css" />
+    <title>Inserir Produto - Teki</title>
+  </head>
+  <body>
+    <main>
+      <div id="formcadastro">
+        <h1 class="tituloh1">Inserir Novo Produto</h1>
+
+        <form method="post" action="inserir.php" enctype="multipart/form-data">
+          <div class="entradaDiv">
+            <label for="nome" class="titulodois">Nome:</label>
+            <input type="text" name="nome" class="entradaCat" required />
+          </div>
+
+          <div class="entradaDiv">
+            <label for="preco_original" class="titulodois"
+              >Preço Original:</label
+            >
+            <input
+              type="number"
+              name="preco_original"
+              class="entradaCat"
+              required
+            />
+          </div>
+
+          <div class="entradaDiv">
+            <label for="preco_promocional" class="titulodois"
+              >Preço Promocional:</label
+            >
+            <input
+              type="number"
+              name="preco_promocional"
+              class="entradaCat"
+              required
+            />
+          </div>
+
+          <div class="entradaDiv">
+            <label for="imagem" class="titulodois">Imagem:</label>
+            <div class="image-container">
+              <div class="image-preview">
+                <img id="preview" src="#" alt="Imagem" />
+                <span class="delete-icon" id="deleteIcon">❌</span>
               </div>
-            </div>
-            <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light
-                weight</span><span class="dot"></span><span>Best finish<br></span></div>
-            <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span
-                class="dot"></span><span>Casual<br></span></div>
-            <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum
-              available, but the majority have suffered alteration in some form, by injected humour, or randomised
-              words which don't look even slightly believable.<br><br></p>
-          </div>
-          <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-            <div class="d-flex flex-row align-items-center">
-              <h4 class="mr-1">$13.99</h4><span class="strike-text">$20.99</span>
-            </div>
-            <h6 class="text-success">Free shipping</h6>
-            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
-                type="button">Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to
-                wishlist</button></div>
-          </div>
-        </div>
-
-
-
-        <div class="row p-2 bg-white border rounded mt-2">
-          <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
-              src="https://i.imgur.com/JvPeqEF.jpg"></div>
-          <div class="col-md-6 mt-1">
-            <h5>Quant trident shirts</h5>
-            <div class="d-flex flex-row">
-              <div class="ratings mr-2">
-                <?php echo exibirEstrelas(4.8); ?> <span>4.8</span>
-              </div>
-            </div>
-            <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light
-                weight</span><span class="dot"></span><span>Best finish<br></span></div>
-            <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span
-                class="dot"></span><span>Casual<br></span></div>
-            <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum
-              available, but the majority have suffered alteration in some form, by injected humour, or randomised
-              words which don't look even slightly believable.<br><br></p>
-          </div>
-          <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-            <div class="d-flex flex-row align-items-center">
-              <h4 class="mr-1">$14.99</h4><span class="strike-text">$20.99</span>
-            </div>
-            <h6 class="text-success">Free shipping</h6>
-            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
-                type="button">Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to
-                wishlist</button></div>
-          </div>
-        </div>
-
-
-
-        <div class="row p-2 bg-white border rounded mt-2">
-          <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
-              src="https://i.imgur.com/Bf4dIaN.jpg"></div>
-          <div class="col-md-6 mt-1">
-            <h5>Quant ruybi shirts</h5>
-            <div class="d-flex flex-row">
-              <div class="ratings mr-2">
-                <?php echo exibirEstrelas(4.8); ?> <span>4.8</span>
-              </div>
-            </div>
-            <div class="mt-1 mb-1 spec-1"><span>100% cotton</span><span class="dot"></span><span>Light
-                weight</span><span class="dot"></span><span>Best finish<br></span></div>
-            <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span
-                class="dot"></span><span>Casual<br></span></div>
-            <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum
-              available, but the majority have suffered alteration in some form, by injected humour, or randomised
-              words which don't look even slightly believable.<br><br></p>
-          </div>
-          <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-            <div class="d-flex flex-row align-items-center">
-              <h4 class="mr-1">$13.99</h4><span class="strike-text">$20.99</span>
-            </div>
-            <h6 class="text-success">Free shipping</h6>
-            <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm"
-                type="button">Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to
-                wishlist</button></div>
-          </div>
-        </div>
-
-         --primary-color: #34394f;
-  --secundary-color: #575b74;
-  --tertiary-color: #6d7081;
-
-
-
-    <div class="container mt-5 mb-5">
-    <div class="container mt-5 mb-5">
-      <div class="row">
-        <div class="col-md-3 mb-4">
-          <div class="bg-white border rounded p-2 text-center">
-            <div class="d-flex justify-content-center">
-              <img class="img-fluid img-responsive rounded product-image"
-                src="/assets/imgs/lenovo-laptop-ideapad-3i-15in-hero.webp" alt="Notebook Image">
-            </div>
-            <h6 class="mt-2 font-weight-bold">Notebook IdeaPad 3i (15” Intel)</h6>
-            <div class="d-flex align-items-center">
-              <div class="ratings mr-2">
-                <?php echo exibirEstrelas(4.8); ?> <span>4.8</span>
-              </div>
-              <span class="ml-2">Avaliações</span>
-            </div>
-            <div class="mt-1 mb-1 spec-1">
-              <!-- Especificações -->
-            </div>
-            <div>
-              <?php
-              $precoNormal = 2670.99;
-              $precoPromocional = 2350.99;
-              echo exibirEconomia($precoNormal, $precoPromocional);
-              ?>
-              <div class="d-flex justify-content-center">
-                <h6 class="font-weight-bold">R$
-                  <?php echo $precoPromocional; ?>
-                </h6>
-                <span class="strike-text ml-2">R$
-                  <?php echo $precoNormal; ?>
-                </span>
-              </div>
-            </div>
-            <div class="d-flex flex-column mt-3">
-              <button class="btn btn-primary btn-sm mb-1" type="button">Detalhes</button>
-              <button class="btn btn-outline-primary btn-sm" type="button">
-                Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
-              </button>
+              <label class="custom-file-upload">
+                <input
+                  type="file"
+                  id="imagem"
+                  name="imagem"
+                  accept="image/*"
+                  required
+                />
+                Escolher Imagem
+              </label>
             </div>
           </div>
-        </div>
-        <!-- Repita este bloco para cada card -->
+
+          <div class="entradaDiv">
+            <input type="submit" value="Inserir Produto" class="cadastrar" />
+          </div>
+        </form>
       </div>
-    </div>
+    </main>
+    <script src="js/drag-and-drop.js"></script>
+  </body>
+</html>
 
-    <!-- Repita este bloco para cada card -->
-  </div>
-  </div>
 
+body {
+  background: url(/image.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.image-preview {
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-preview {
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-file-upload {
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  text-align: center;
+}
+
+#formcadastro {
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.tituloh1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.titulodois {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.entradaDiv {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.entradaCat {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.left {
+  justify-content: left;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+}
+
+.cadastrar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+}

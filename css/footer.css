@@ -6,6 +6,11 @@
   background: var(--secundary-color);
 }
 
+.icons {
+  font-size: 3rem;
+  margin: 0 0.5rem;
+}
+
 .copyright {
   background: var(--primary-color);
 }
