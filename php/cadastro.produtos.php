@@ -31,9 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $stmt->bindParam(':preco_promocional', $preco_promocional);
   $stmt->bindParam(':categoria', $categoria);
   if ($stmt->execute()) {
-    echo "Produto inserido com sucesso!";
+    echo "showPopup('Produto inserido com sucesso!');";
   } else {
-    echo "Erro ao inserir o produto.";
+    echo "showPopup('Erro ao inserir o produto.');";
   }
 }
 ?>

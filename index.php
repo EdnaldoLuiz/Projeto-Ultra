@@ -16,8 +16,25 @@ include 'php/consultas.php';
     </div>
 
     <div class="cards">
-      <?php include 'php/notebooks-list.php'; ?>
+      <?php include 'php/lists/notebooks-list.php'; ?>
     </div>
+
+    <div class="cards-title">
+      <h2>Smartphones</h2>
+    </div>
+
+    <div class="cards">
+      <?php include 'php/lists/smartphones-list.php'; ?>
+    </div>
+
+    <div class="cards-title">
+      <h2>Computadores</h2>
+    </div>
+
+    <div class="cards">
+      <?php include 'php/lists/computers-list.php'; ?>
+    </div>
+
   </main>
   <?php include 'php/footer.php'; ?>
 </body>

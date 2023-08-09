@@ -6,16 +6,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/cadastro.produtos.css" />
+  <link rel="stylesheet" href="/css/cadastro.produtos.css" />
   <title>Inserir Produto - Teki</title>
 </head>
 
 <body>
   <main>
     <div id="formcadastro">
+
+      <div id="details-popup" class="details-popup">
+        <div class="popup-content">
+          <button id="close-details-popup">Fechar</button>
+          <div id="details-content"></div>
+        </div>
+      </div>
+
       <h1 class="tituloh1">Inserir Novo Produto</h1>
 
-      <form method="post" action="inserir.php" enctype="multipart/form-data">
+      <form method="post" action="/php/cadastro.produtos.php" enctype="multipart/form-data">
 
         <div class="main-container">
 
@@ -44,6 +52,7 @@
                 <option value="" disabled selected>Selecione uma categoria</option>
                 <option value="notebooks">Notebooks</option>
                 <option value="smartphones">Smartphones</option>
+                <option value="computadores">Computadores</option>
                 <option value="outros">Outros</option>
               </select>
             </div>
@@ -73,7 +82,7 @@
     </div>
     </form>
   </main>
-  <script src="js/img-input-preview.js"></script>
+  <script src="/js/img-input-preview.js"></script>
 </body>
 
 </html>
