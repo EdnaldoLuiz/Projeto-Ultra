@@ -126,8 +126,10 @@ select {
   background-color: #2980b9;
 }
 
-.popup {
-  display: none;
+/* No seu arquivo de estilos CSS */
+
+.details-popup {
+  /*display: none;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -147,6 +149,11 @@ select {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-#popup-close-btn {
+#close-details-popup {
+  float: right;
+  cursor: pointer;
+}
+
+#details-content {
   margin-top: 10px;
 }

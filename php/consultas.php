@@ -2,7 +2,7 @@
 include 'conexao.php';
 
 try {
-  $sql = "SELECT * FROM Teki.produtos WHERE categoria = 'notebooks'";
+  $sql = "SELECT * FROM Teki.produtos WHERE categoria = 'notebooks' limit 4";
   $statement = $PDO->prepare($sql);
   $statement->execute();
   $notebooks = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -11,7 +11,7 @@ try {
 }
 
 try {
-  $sql = "SELECT * FROM Teki.produtos WHERE categoria = 'smartphones'";
+  $sql = "SELECT * FROM Teki.produtos WHERE categoria = 'smartphones' limit 4";
   $statement = $PDO->prepare($sql);
   $statement->execute();
   $smartphones = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -20,7 +20,7 @@ try {
 }
 
 try {
-  $sql = "SELECT * FROM Teki.produtos WHERE categoria = 'computadores'";
+  $sql = "SELECT * FROM Teki.produtos WHERE categoria = 'computadores' limit 4";
   $statement = $PDO->prepare($sql);
   $statement->execute();
   $computers = $statement->fetchAll(PDO::FETCH_ASSOC);
