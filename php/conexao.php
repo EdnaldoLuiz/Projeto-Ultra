@@ -1,8 +1,8 @@
 <?php
-$host = "127.0.0.1";
+$host = "containers-us-west-58.railway.app:7418/railway";
 $user = "root";
-$password = "06022003";
-$database = "Teki";
+$password = "WhE4Yx1WyqberwnnVDgG";
+$database = "railway";
 
 try {
     $PDO = new PDO("mysql:host=$host;database=$database", $user, $password);
