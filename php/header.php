@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-  <title>Title</title>
+  <title>Teki</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,8 +26,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6">
-          <strong class="small"><i class="bx bx-envelope"></i> contato@example.com | <i class="bx bx-phone"></i>
-            +55 (98) 97654-3210
+          <strong class="small"><i class="bx bx-envelope"></i> contatoednaldoluiz@gmail.com | <i
+              class="bx bx-phone"></i>
+            +55 (81) 98779-6232
           </strong>
         </div>
 
@@ -46,9 +47,10 @@
             <img class="d-none d-md-flex logo" src="assets/imgs/logo.png">
           </div>
           <div class="col-md-6">
-            <form class="form-inline my-2 my-lg-0 mx-auto">
+            <form class="form-inline my-2 my-lg-0 mx-auto" action="/php/pesquisar.php" method="get">
               <div class="input-group">
-                <input class="form-control" type="search" placeholder="procure por produtos" aria-label="Search">
+                <input class="form-control" type="search" placeholder="procure por produtos" aria-label="Search"
+                  name="termo">
                 <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
             </form>
