@@ -63,7 +63,17 @@
                   <i class="fa-solid fa-circle-user"></i>
                 </span>
                 <div class="d-flex flex-column ms-2 icon-desc">
-                  <span class="text-center fw-bold">Faça login ou seu cadastro</span>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="text-center fw-bold">Faça login <br> ou seu cadastro</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Admin</a></li>
+                      <li><a class="dropdown-item" href="#">Usuário</a></li>
+                    </ul>
+                  </li>
                 </div>
               </div>
             </div>
@@ -75,11 +85,11 @@
                 <span class="icons"><i class="fa-solid fa-cart-shopping"></i></span>
                 <div class="d-flex flex-column ms-2 icon-desc">
                   <span class="qty">Produto(s)</span>
-                  <span class="fw-bold">$27.90</span>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -105,13 +115,13 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Electronics</a>
+            <a class="nav-link active text-white" aria-current="page" href="#">Smartphones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Fashion</a>
+            <a class="nav-link text-white" href="#">Notebooks</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Furnitures</a>
+            <a class="nav-link text-white" href="#">Computadores</a>
           </li>
         </ul>
       </div>
@@ -124,6 +134,11 @@
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+
+  <script src="js/add-carrinho.js"></script>

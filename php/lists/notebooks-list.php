@@ -22,7 +22,7 @@
         </h6>
       </div>
       <div class="d-flex flex-column mt-3">
-        <button class="btn btn-primary btn-sm mb-1" type="button">Detalhes</button>
+
         <button class="btn btn-outline-primary btn-sm" type="button">
           Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
         </button>

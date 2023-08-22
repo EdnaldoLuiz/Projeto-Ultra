@@ -126,8 +126,6 @@ select {
   background-color: #2980b9;
 }
 
-/* No seu arquivo de estilos CSS */
-
 .details-popup {
   display: none;
   position: fixed;
