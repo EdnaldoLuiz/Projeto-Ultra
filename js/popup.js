@@ -1,15 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
+const modal = document.querySelector(".modal");
+const trigger = document.querySelector(".trigger");
+const closeButton = document.querySelector(".close-button");
 
-  var botao = document.querySelector(".cadastrar");
-  var botaoFechar = document.getElementById("close-popup");
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
 
-  var div = document.getElementById("popup");
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
 
-  botao.addEventListener("click", function () {
-    div.style.display = "block";
-  });
-
-  botaoFechar.addEventListener("click", function () {
-    div.style.display = "none";
-  })
-});
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick); 

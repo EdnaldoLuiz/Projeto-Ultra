@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="pt-BR">
 
@@ -67,11 +71,23 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="text-center fw-bold">Faça login <br> ou seu cadastro</span>
+                      <?php
+                      if (isset($_SESSION['user_name'])) {
+                        echo '<span class="text-center fw-bold">Olá, ' . $_SESSION['user_name'] . '</span>';
+                      } else {
+                        echo '<span class="text-center fw-bold">Faça login <br> ou seu cadastro</span>';
+                      }
+                      ?>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Admin</a></li>
-                      <li><a class="dropdown-item" href="#">Usuário</a></li>
+                      <?php
+                      if (isset($_SESSION['user_name'])) {
+                        echo '<li><a class="dropdown-item" href="php/logout.php">Sair</a></li>';
+                      } else {
+                        echo '<li><a class="dropdown-item" href="pages/login.html">Login</a></li>';
+                        echo '<li><a class="dropdown-item" href="#">Registrar</a></li>';
+                      }
+                      ?>
                     </ul>
                   </li>
                 </div>
@@ -80,18 +96,16 @@
           </div>
 
           <div class="col-md-2">
-            <div class="d-flex justify-content-center">
-              <div class="d-flex flex-row align-items-center">
-                <span class="icons"><i class="fa-solid fa-cart-shopping"></i></span>
-                <div class="d-flex flex-column ms-2 icon-desc">
-                  <span class="qty">Produto(s)</span>
-                </div>
+            <div class="d-flex align-items-center">
+              <div id="cart" class="cart" data-totalitems="0">
+                <i class="fas fa-shopping-cart"></i>
               </div>
+              <span class="ml-2 text-center fw-bold text-white">Produtos</span>
             </div>
           </div>
 
+
         </div>
-      </div>
     </section>
   </header>
 

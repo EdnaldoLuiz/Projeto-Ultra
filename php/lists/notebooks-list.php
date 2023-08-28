@@ -22,11 +22,12 @@
         </h6>
       </div>
       <div class="d-flex flex-column mt-3">
-
-        <button class="btn btn-outline-primary btn-sm" type="button">
+        <button class="btn btn-outline-primary btn-sm add-to-cart-btn" type="button"
+          data-product-id="<?php echo $notebook['id']; ?>">
           Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i>
         </button>
       </div>
+
     </div>
   </div>
 <?php endforeach; ?>

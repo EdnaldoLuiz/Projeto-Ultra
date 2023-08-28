@@ -8,6 +8,15 @@ body {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
 :root {
   --primary-color: #262e55;
   --secundary-color: #343d77;

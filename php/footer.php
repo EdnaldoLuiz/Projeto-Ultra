@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <div class="text-center p-3 copyright mb-4">
+  <div class="text-center p-3 copyright">
     <p>LGPD
       Teki e-coomerce. Todos os direitos reservados | Powered by: EdnLz Group</p>
     <a> ABC Distribuidora S/A. CNPJ 12.XX.XXX/XXXX-43</a>

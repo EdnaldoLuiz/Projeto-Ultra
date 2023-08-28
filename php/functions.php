@@ -16,7 +16,5 @@ function exibirEstrelas($notaProduto)
   }
   return $estrelasHTML;
 }
-for ($card = 1; $card <= 4; $card++) {
-  $numeroAvaliacoes = rand(100, 999);
-}
+$numeroAvaliacoes = 0;
 ?>

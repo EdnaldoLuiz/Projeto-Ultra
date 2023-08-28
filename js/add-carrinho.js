@@ -1,14 +1,17 @@
 $(document).ready(function () {
-  let cartTotal = 0;
-  let totalPrice = 0.0;
+  $('.add-to-cart-btn').on('click', function () {
+    var button = $(this);
+    var cart = $('#cart');
+    var cartTotal = cart.attr('data-totalitems');
+    var newCartTotal = parseInt(cartTotal) + 1;
 
-  $(".add-to-cart-btn").click(function () {
-    const productId = $(this).data("product-id");
-    const productPrice = parseFloat($(this).data("product-price"));
-    cartTotal++;
-    totalPrice += productPrice;
-
-    $(".qty").text(cartTotal + " Produto(s)");
-    $(".total-price").text("$" + totalPrice.toFixed(2));
-  });
+    button.addClass('sendtocart');
+    setTimeout(function () {
+      button.removeClass('sendtocart');
+      cart.addClass('shake').attr('data-totalitems', newCartTotal);
+      setTimeout(function () {
+        cart.removeClass('shake');
+      }, 500)
+    }, 1000)
+  })
 });

@@ -30,10 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $stmt->bindParam(':preco_original', $preco_original);
   $stmt->bindParam(':preco_promocional', $preco_promocional);
   $stmt->bindParam(':categoria', $categoria);
-  if ($stmt->execute()) {
-    echo "showPopup('Produto inserido com sucesso!');";
-  } else {
-    echo "showPopup('Erro ao inserir o produto.');";
-  }
+
+  $stmt->execute();
+  header("Location: /pages/cadastro.produtos.html");
+  exit();
 }
 ?>

@@ -13,19 +13,11 @@
 <body>
   <main>
     <div id="formcadastro">
-
-      <div id="popup" class="details-popup">
-        <button id="close-popup">Fechar</button>
-      </div>
-
       <h1 class="tituloh1">Inserir Novo Produto</h1>
 
       <form method="post" action="/php/cadastro.produtos.php" enctype="multipart/form-data">
-
         <div class="main-container">
-
           <div class="right">
-
             <div class="campos">
               <label for="nome">Nome:</label>
               <input type="text" name="nome" class="entradaCat" required />
@@ -56,7 +48,6 @@
           </div>
 
           <div class="left">
-
             <div class="campos">
               <label for="imagem" class="titulodois">Imagem:</label>
               <div class="img-preview">
@@ -74,7 +65,15 @@
           </div>
         </div>
         <div class="campos">
-          <input type="submit" value="Inserir Produto" class="cadastrar" />
+          <input type="submit" value="Inserir Produto" class="cadastrar trigger" />
+        </div>
+
+        <div class="modal">
+          <div class="modal-content">
+            <img src="/assets/imgs/checkmark-circle-svgrepo-com.png" alt="icone de confirmar">
+            <h2>Produto inserido com sucesso!</h2>
+            <span class="close-button">OK</span>
+          </div>
         </div>
     </div>
     </form>

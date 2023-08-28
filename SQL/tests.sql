@@ -1,4 +1,4 @@
--- Active: 1689801237547@@127.0.0.1@3306@Teki
+-- Active: 1692314701072@@127.0.0.1@3306@Teki
 
 ALTER TABLE produtos
 ADD
@@ -24,3 +24,5 @@ ADD COLUMN categoria
 ALTER TABLE
     notebooks DROP COLUMN rating,
     DROP COLUMN reviews;
+
+DELETE FROM produtos WHERE categoria = 'outros';
