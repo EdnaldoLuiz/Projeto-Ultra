@@ -65,3 +65,12 @@ CREATE TABLE usuarios (
   senha VARCHAR(255) NOT NULL
 );
 ```
+
+<h3>Tech Stack utilizada:</h3>
+
+<div align="center">
+    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/0a9c3e81-030e-4343-9add-df3401ffec8c">
+</div>
+
+
+
