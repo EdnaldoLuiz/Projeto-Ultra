@@ -66,6 +66,26 @@ CREATE TABLE usuarios (
 );
 ```
 
+<h2>Conexão com o banco de dados:</h2>
+
+### conexao.php
+
+```php
+<?php
+$host = "127.0.0.1";
+$user = "root";
+$password = "sua_senha";
+$database = "seu_banco";
+
+try {
+    $PDO = new PDO("mysql:host=$host;database=$database", $user, $password);
+    $PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo ("erro " . $e->getMessage());
+}
+?>
+```
+
 <h3>Tech Stack utilizada:</h3>
 
 <div align="center">
