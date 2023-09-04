@@ -1,44 +1,71 @@
 <h1 align="center">Teki</h1>
 
-<h2>Visao geral do Projeto:</h2>
+<h2>:computer: Visao geral do Projeto:</h2>
 
-<h3>Login page:</h3>
+<table>
+    <thead>
+        <tr>
+            <th align="center">
+                <img width="20" height="1"> 
+                <p align="center"><small>Nome</small></p>
+            </th>
+            <th align="center">
+                <img width="300" height="1"> 
+                <p align="center"><small>Descrição</small></p>
+            </th>
+            <th align="left">
+                <img width="140" height="1">
+                <p align="center"><small>Imagem</small></p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">:key: Login page</td>
+            <td>Pagina de cadastro e login dos usuários registrados.</td>
+            <td align="center">
+                <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/1764a9f3-91aa-43f3-a0ae-b1a53ce52cea">
+	        </td>
+        </tr>
+        <tr>
+            <td align="center"> Header </td>
+            <td>Header com as opçoes de barra de pesquisa, login e sistema de carrinho.</td>
+            <td align="center">
+           	    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/d2d52dca-10cf-4059-94c8-7d37cf04d0fa">
+	        </td>
+        </tr>
+	    <tr>
+            <td align="center">Seção de Notebooks </td>
+            <td>Trás com limite de 4, os notebooks com a melhor avaliação do banco de dados.</td>
+            <td align="center">
+           	    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/b082db02-8c84-4f26-89d1-daa56290a734">
+	        </td>
+        </tr>
+	    <tr>
+            <td align="center">Seção de Smartphones </td>
+            <td>Trás com limite de 4, os smartphones com a melhor avaliação do banco de dados.</td>
+            <td align="center">
+           	    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/6e5e6151-a7a6-4e66-b2ad-436ab8d479fe">
+	        </td>
+        </tr>
+        <tr>
+            <td align="center">Seção de Computadores </td>
+            <td>Trás com limite de 4, os monitores com a melhor avaliação do banco de dados.</td>
+            <td align="center">
+           	    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/50b449a2-5924-4259-8cbe-c426efe6cd4d">
+	        </td>
+        </tr>
+        <tr>
+            <td align="center">Footer </td>
+            <td>Footer com as informações legais e links para redes sociais.</td>
+            <td align="center">
+           	    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/f3fd4758-893b-47ee-ae1c-95da38aacfc7">
+	        </td>
+        </tr>
+    </tbody>
+</table>
 
-<div align="center">
-    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/1764a9f3-91aa-43f3-a0ae-b1a53ce52cea">
-</div>
-
-<h3>Header:</h3>
-
-<div align="center">
-    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/d2d52dca-10cf-4059-94c8-7d37cf04d0fa">
-</div>
-
-<h3>Seção de Notebooks:</h3>
-
-<div align="center">
-    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/b082db02-8c84-4f26-89d1-daa56290a734">
-</div>
-
-<h3>Seção de Smartphones:</h3>
-
-<div align="center">
-    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/6e5e6151-a7a6-4e66-b2ad-436ab8d479fe">
-</div>
-
-<h3>Seção de Computadores:</h3>
-
-<div align="center">
-    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/50b449a2-5924-4259-8cbe-c426efe6cd4d">
-</div>
-
-<h3>Footer:</h3>
-
-<div align="center">
-    <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/f3fd4758-893b-47ee-ae1c-95da38aacfc7">
-</div>
-
-<h2>Scripts MySQL:</h2>
+<h2>:dolphin: Scripts MySQL:</h2>
 
 ### Tabela de Produtos
 ```sql
@@ -66,10 +93,10 @@ CREATE TABLE usuarios (
 );
 ```
 
-<h2>Conexão com o banco de dados:</h2>
+<h2>🔗 Conexão com o banco de dados:</h2>
 
-### conexao.php
-
+### :page_facing_up: conexao.php
+- Arquivo de conectar ao banco de dados usando padrões do curso com PDO
 ```php
 <?php
 $host = "127.0.0.1";
@@ -86,7 +113,7 @@ try {
 ?>
 ```
 
-<h3>Tech Stack utilizada:</h3>
+<h3>🔧 Tech Stack utilizada:</h3>
 
 <div align="center">
     <img width="100%" src="https://github.com/EdnaldoLuiz/Teki/assets/112354693/0a9c3e81-030e-4343-9add-df3401ffec8c">
